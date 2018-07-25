@@ -1,0 +1,4 @@
+{
+    "directory": "wwwroot/lib",
+    "https-proxy":"http://94.141.177.70:3128"
+  }
