@@ -38,6 +38,7 @@ namespace DynamicChat
                     name: "default",
                     template: "{controller=Message}/{action=List}/{id?}");
             });
+            SeedData.EnsurePopulated(app);
         }
     }
 }
