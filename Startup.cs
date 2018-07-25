@@ -7,13 +7,23 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using DynamicChat.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace DynamicChat
 {
     public class Startup
     {
+        public Startup(IConfiguration configuration) =>
+            Configuration = configuration;
+
+        public IConfiguration Configuration { get; }
+
         public void ConfigureServices(IServiceCollection services) 
         {
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration["Data:DynamicChatMessages:ConnectionString"]));
             services.AddTransient<IMessageRepository, FakeMessageRepository>();
             services.AddMvc();
         }
