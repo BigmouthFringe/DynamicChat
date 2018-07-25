@@ -7,3 +7,7 @@ DynamicChat:
 
     Login Page:
         
+
+~Notes:
+        _ViewImports.cshtml refering to needed namespaces
+        

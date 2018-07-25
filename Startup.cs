@@ -22,7 +22,7 @@ namespace DynamicChat
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvc(routes => {
-                
+                 
             });
         }
     }
