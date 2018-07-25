@@ -1,14 +1,19 @@
 @model Message
-@{ Layout = null; }
+@{ 
+    ViewBag.Title = "Send Message";
+    Layout = null; 
+}
 
 <form asp-action="Edit" method="post">
     <input type="hidden" asp-for="MessageID" />
     <div class="form-group">
         <label asp-for="Sender"></label>
+        <div><span asp-validation-for="Sender" class="text-danger"></span></div>
         <input asp-for="Sender" class="form-control" />
     </div>
     <div class="form-group">
         <label asp-for="Content"></label>
+        <div><span asp-validation-for="Content" class="text-danger"></span></div>
         <textarea asp-for="Content" class="form-control"></textarea>
     </div>
     <div class="text-center">

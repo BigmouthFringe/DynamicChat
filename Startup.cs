@@ -24,7 +24,7 @@ namespace DynamicChat
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration["Data:DynamicChatMessages:ConnectionString"]));
-            services.AddTransient<IMessageRepository, FakeMessageRepository>();
+            services.AddTransient<IMessageRepository, EFMessageRepository>();
             services.AddMvc();
         }
 

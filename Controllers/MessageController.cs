@@ -14,9 +14,25 @@ namespace DynamicChat.Controllers
         }
 
         public ViewResult Index() => View();
+
         public ViewResult List() => View(repository.Messages);
+        
         public ViewResult Edit(int messageId) =>
             View(repository.Messages
                 .FirstOrDefault(m => m.MessageID == messageId));
+        
+        [HttpPost]
+        public IActionResult Edit(Message message) {
+            if (ModelState.IsValid) {
+                repository.SaveProduct(message);
+                TempData["message"] = $"{message.Sender} has been saved";
+                return RedirectToAction("Index");
+            } else {
+                // there is something wrong with the data values
+                return View(message);
+            }
+        }
+
+        public ViewResult Create() => View("Edit", new Message());
     }
 }
