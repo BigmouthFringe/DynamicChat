@@ -1,0 +1,8 @@
+@model IEnumerable<Message>
+
+@foreach (var m in Model) {
+    <div>
+        <h3>@m.Sender</h3>
+        <h4>@m.Content</h4>
+    </div>
+}

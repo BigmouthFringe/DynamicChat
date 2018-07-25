@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using DynamicChat.Models;
 
 namespace DynamicChat
 {
@@ -13,6 +14,7 @@ namespace DynamicChat
     {
         public void ConfigureServices(IServiceCollection services) 
         {
+            services.AddTransient<IMessageRepository, FakeMessageRepository>();
             services.AddMvc();
         }
 
@@ -22,7 +24,9 @@ namespace DynamicChat
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvc(routes => {
-                 
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Message}/{action=List}/{id?}");
             });
         }
     }
