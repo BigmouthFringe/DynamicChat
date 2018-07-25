@@ -2,9 +2,12 @@ DynamicChat:
 
     Chat Page:
         ✔ Make a repository @done (7/25/2018, 1:35:03 PM)
-        ☐ Create chat view:
+        ☐ Create chat page:
             ✔ Create database @done (7/25/2018, 1:44:36 PM)
             ✔ Create real repository @done (7/25/2018, 1:44:48 PM)
+            ✔ Create views and controllers for chat page @done (7/25/2018, 2:25:55 PM)
+            ☐ Style it a bit
+            ☐ Add paging @low 
         ☐ Add sending functionality
 
     Login Page:
