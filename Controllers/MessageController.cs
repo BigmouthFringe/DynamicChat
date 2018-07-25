@@ -12,6 +12,7 @@ namespace DynamicChat.Controllers
             repository = repo;
         }
 
+        public ViewResult Index() => View();
         public ViewResult List() => View(repository.Messages);
     }
 }

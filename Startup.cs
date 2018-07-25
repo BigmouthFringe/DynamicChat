@@ -36,7 +36,7 @@ namespace DynamicChat
             app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Message}/{action=List}/{id?}");
+                    template: "{controller=Message}/{action=Index}/{id?}");
             });
             SeedData.EnsurePopulated(app);
         }
