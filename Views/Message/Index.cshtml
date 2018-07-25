@@ -1,11 +1,16 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
 <div>
-    <div>You will type your message here</div>
+    <div id="sending"></div>
     <div id="messages"></div>
 </div>
 
 <script>
+        function loadSendForm () {
+            $('#sending').load("/Message/Edit");
+        }
+        loadSendForm();
+
         var timeout = setInterval(reloadChat, 1000);    
         function reloadChat () {
             $('#messages').load("/Message/List");

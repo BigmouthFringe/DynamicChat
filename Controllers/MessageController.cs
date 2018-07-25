@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using DynamicChat.Models;
+using System.Linq;
 
 namespace DynamicChat.Controllers 
 {
@@ -14,5 +15,8 @@ namespace DynamicChat.Controllers
 
         public ViewResult Index() => View();
         public ViewResult List() => View(repository.Messages);
+        public ViewResult Edit(int messageId) =>
+            View(repository.Messages
+                .FirstOrDefault(m => m.MessageID == messageId));
     }
 }

@@ -6,8 +6,8 @@ DynamicChat:
             ✔ Create database @done (7/25/2018, 1:44:36 PM)
             ✔ Create real repository @done (7/25/2018, 1:44:48 PM)
             ✔ Create views and controllers for chat page @done (7/25/2018, 2:25:55 PM)
-            ☐ Style it a bit
-            ☐ Add paging @low 
+            ✔ Style it a bit @done (7/25/2018, 8:46:56 PM)
+        ✔ Make it dynamic @done (7/25/2018, 8:47:44 PM)
         ☐ Add sending functionality
 
     Login Page:
