@@ -57,12 +57,12 @@ using DynamicChat.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n    ");
             EndContext();
             BeginContext(31, 669, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4eda17a9f2d4929b290510dfe408fa0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5e064b8c922438b9576984af0a91012", async() => {
                 BeginContext(37, 73, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n        ");
                 EndContext();
                 BeginContext(110, 146, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e1c9c655368c426fa4222f7b61ff210b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ced501181f2e42e59855d089c8de1460", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
@@ -109,7 +109,7 @@ using DynamicChat.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(706, 727, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "636ad8c618404a2c885f544ef0e1ad71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22d30d6fe8994709be665cc3a528edff", async() => {
                 BeginContext(712, 158, true);
                 WriteLiteral("\r\n        <div class=\"navbar navbar-inverse bg-inverse\" role=\"navigation\">\r\n            <a class=\"navbar-brand\" href=\"#\">Dynamic Chat</a>\r\n            <div>\r\n");
                 EndContext();
@@ -122,7 +122,7 @@ using DynamicChat.Models;
                 WriteLiteral("                    ");
                 EndContext();
                 BeginContext(956, 102, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93be58ded344432f9ede103980ad7966", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "505a0f5b63a94ee09465e68f4afbb5a4", async() => {
                     BeginContext(1048, 6, true);
                     WriteLiteral("Logout");
                     EndContext();
