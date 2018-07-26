@@ -8,10 +8,13 @@ namespace DynamicChat.Controllers
     public class AccountController : Controller 
     {
         private UserManager<AppUser> userManager;
+        private SignInManager<AppUser> signInManager;
 
-        public AccountController(UserManager<AppUser> usrMgr) 
+        public AccountController(UserManager<AppUser> usrMgr,
+                SignInManager<AppUser> signinMgr) 
         {
             userManager = usrMgr;
+            signInManager = signinMgr;
         }
 
         public ViewResult List() => View(userManager.Users);
@@ -24,8 +27,23 @@ namespace DynamicChat.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginModel details, string returnUrl) 
+        public async Task<IActionResult> Login(LoginModel details,
+                string returnUrl) 
         {
+            if (ModelState.IsValid) {
+                AppUser user = await userManager.FindByEmailAsync(details.Email);
+                if (user != null) {
+                await signInManager.SignOutAsync();
+                Microsoft.AspNetCore.Identity.SignInResult result =
+                    await signInManager.PasswordSignInAsync(
+                            user, details.Password, false, false);
+                    if (result.Succeeded) {
+                        return RedirectToAction("Index", "Message");
+                    }
+                }
+                ModelState.AddModelError(nameof(LoginModel.Email),
+                    "Invalid user or password");
+            }
             return View(details);
         }
 
