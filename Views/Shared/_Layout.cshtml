@@ -19,6 +19,13 @@
     <body>
         <div class="navbar navbar-inverse bg-inverse" role="navigation">
             <a class="navbar-brand" href="#">Dynamic Chat</a>
+            <div>
+                @if (User?.Identity?.IsAuthenticated ?? false) {
+                    <a asp-controller="Account" asp-action="Logout"
+                    class="btn btn-danger">Logout</a>
+                }
+            </div>
+            
         </div>
         <div class="row m-1 p-1">
             <div class="col-9">

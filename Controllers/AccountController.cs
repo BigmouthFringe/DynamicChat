@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using DynamicChat.Models;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DynamicChat.Controllers 
 {
@@ -68,6 +69,13 @@ namespace DynamicChat.Controllers
                 }
             }
             return View(model);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Logout() 
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Login", "Account");
         }
     }
 }
