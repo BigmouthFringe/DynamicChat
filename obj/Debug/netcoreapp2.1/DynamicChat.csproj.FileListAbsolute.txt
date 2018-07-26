@@ -26,3 +26,4 @@ E:\Programming\WebDevelopment\DynamicChat\obj\Debug\netcoreapp2.1\Razor\Views\Sh
 E:\Programming\WebDevelopment\DynamicChat\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 E:\Programming\WebDevelopment\DynamicChat\obj\Debug\netcoreapp2.1\Razor\Views\Message\Index.g.cshtml.cs
 E:\Programming\WebDevelopment\DynamicChat\obj\Debug\netcoreapp2.1\Razor\Views\Message\Edit.g.cshtml.cs
+E:\Programming\WebDevelopment\DynamicChat\obj\Debug\netcoreapp2.1\Razor\Views\Account\Create.g.cshtml.cs
