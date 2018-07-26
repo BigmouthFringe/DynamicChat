@@ -28,7 +28,7 @@ namespace DynamicChat.Controllers
                 IdentityResult result
                     = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded) {
-                    return RedirectToAction("../Message/Index");
+                    return RedirectToAction("Index", "Message");
                 } else {
                     foreach (IdentityError error in result.Errors) {
                         ModelState.AddModelError("", error.Description);
