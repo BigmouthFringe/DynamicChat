@@ -28,14 +28,14 @@ namespace DynamicChat.Controllers
                 IdentityResult result
                     = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded) {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("../Message/Index");
                 } else {
                     foreach (IdentityError error in result.Errors) {
                         ModelState.AddModelError("", error.Description);
                     }
                 }
             }
-            return RedirectToAction("Index", "Message");
+            return View(model);
         }
     }
 }
