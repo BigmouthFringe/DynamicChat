@@ -53,12 +53,12 @@ using DynamicChat.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n    ");
             EndContext();
             BeginContext(31, 669, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed8e120635e748a7864720cb109b38ab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7845b4267298491d8a1e533922d18ff0", async() => {
                 BeginContext(37, 73, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n        ");
                 EndContext();
                 BeginContext(110, 146, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2dc5846f17a547d2b4dc0e83cfa0abbd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "67ca8ed31b064c129c3e86b52aa9db10", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
@@ -105,7 +105,7 @@ using DynamicChat.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(706, 465, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c58c6aef3db9462d8af574c9f546905d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba390dbbe8814fadbd176e179cb31e71", async() => {
                 BeginContext(712, 223, true);
                 WriteLiteral("\r\n        <div class=\"navbar navbar-inverse bg-inverse\" role=\"navigation\">\r\n            <a class=\"navbar-brand\" href=\"#\">Dynamic Chat</a>\r\n        </div>\r\n        <div class=\"row m-1 p-1\">\r\n            <div class=\"col-9\">\r\n");
                 EndContext();

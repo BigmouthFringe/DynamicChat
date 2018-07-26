@@ -14,6 +14,7 @@ namespace DynamicChat.Controllers
             userManager = usrMgr;
         }
 
+        public ViewResult List() => View(userManager.Users);
         public ViewResult Create() => View();
 
         [HttpPost]
@@ -34,7 +35,7 @@ namespace DynamicChat.Controllers
                     }
                 }
             }
-            return View("../Message/Index");
+            return RedirectToAction("Index", "Message");
         }
     }
 }
