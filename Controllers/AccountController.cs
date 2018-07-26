@@ -15,6 +15,20 @@ namespace DynamicChat.Controllers
         }
 
         public ViewResult List() => View(userManager.Users);
+
+        public IActionResult Login(string returnUrl) 
+        {
+            ViewBag.returnUrl = returnUrl;
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginModel details, string returnUrl) 
+        {
+            return View(details);
+        }
+
         public ViewResult Create() => View();
 
         [HttpPost]

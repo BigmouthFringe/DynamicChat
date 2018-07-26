@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using DynamicChat.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DynamicChat.Controllers 
 {
+    [Authorize]
     public class MessageController : Controller 
     {
         private IMessageRepository repository;
