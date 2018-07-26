@@ -2,7 +2,7 @@ DynamicChat:
 
     Chat Page:
         ✔ Make a repository @done (7/25/2018, 1:35:03 PM)
-        ☐ Create chat page:
+        ✔ Create chat page: @done (7/25/2018, 9:38:28 PM)
             ✔ Create database @done (7/25/2018, 1:44:36 PM)
             ✔ Create real repository @done (7/25/2018, 1:44:48 PM)
             ✔ Create views and controllers for chat page @done (7/25/2018, 2:25:55 PM)
